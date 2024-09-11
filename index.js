@@ -1,5 +1,9 @@
 const express = require("express");
 const mongoose = require('mongoose');
+
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
+
 const authRoutes = require("./routes/authRoutes");
 const crudTransactionRoutes = require("./routes/crudTransactionRoutes");
 const crudSavingsRoutes = require("./routes/crudSavingRoutes");
@@ -9,6 +13,7 @@ const reportRoutes = require("./routes/reportRoutes")
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const PORT = 5000;
 
