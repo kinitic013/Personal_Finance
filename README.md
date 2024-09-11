@@ -31,9 +31,7 @@ npm install
 
 This will install the required packages listed in the `package.json` file.
 
-Replace `your_local_mongodb_uri_or_atlas_uri` with your local MongoDB URI (e.g., `mongodb://localhost:27017/personal_finance`) or a connection string from MongoDB Atlas.
-
-Set `JWT_SECRET` to any random secret string that will be used for JWT token generation.
+Replace `your_local_mongodb_uri_or_atlas_uri` with your local MongoDB URI (e.g., `mongodb://localhost:27017/personal_finance`) or a connection string from MongoDB Atlas
 
 Set the `PORT` to the port number you want the backend to run on (optional; defaults to 5000).
 
