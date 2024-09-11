@@ -59,4 +59,4 @@ Or, to run it normally without nodemon:
 npm start
 ```
 
-The backend will now be running at `http://localhost:5000` (or the port you specified in the `.env` file).
+The backend will now be running at `http://localhost:5000` and Swagger UI is running as `http://localhost:5000/api-docs/`
