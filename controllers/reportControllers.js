@@ -52,8 +52,8 @@ module.exports.get_report = async (req, res) => {
 module.exports.get_report_custom_dates = async (req, res) => {
   try {
     const userId = req.body.UserId;
-    const startDate = new Date(req.body.startDate);
-    const endDate = new Date(req.body.endDate);     
+    const startDate = new Date(req.body.StartDate);
+    const endDate = new Date(req.body.EndDate);     
 
     console.log(startDate);
     console.log(endDate);

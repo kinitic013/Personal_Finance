@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const CategoryModel = new Schema(
     {
-        Name : String
+        Name : String,
+        UserId : String
     }
 )
 

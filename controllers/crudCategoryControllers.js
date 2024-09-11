@@ -46,7 +46,7 @@ module.exports.update_category = async (req, res) => {
     try {
         const updatedCategory = await Category.findByIdAndUpdate(
             req.body._id,
-            { Name: req.body.new_name }, // Only update the Name field
+            { Name: req.body.New_name }, // Only update the Name field
             { new: true } // Option to return the updated document
         );
 

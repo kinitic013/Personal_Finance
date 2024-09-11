@@ -7,6 +7,7 @@ const SavingModel = new Schema(
         TargetDate : Date,
         Description : String,
         UserId : String,
+        created:  {type: Date, default: Date.now},
     }
 )
 

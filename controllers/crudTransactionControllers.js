@@ -19,7 +19,7 @@ module.exports.create_transaction = async (req,res)=>
         {
             Amount : req.body.Amount,
             Description : req.body.Description,
-            UserId  : req.body.userId,
+            UserId  : req.body.UserId,
             Category_id : req.body.Category_id,
             Type : req.body.Type,
             Date : Date.now()
