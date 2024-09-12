@@ -13,12 +13,23 @@ module.exports.get_all = async (req, res) => {
 };
 
 module.exports.create_saving = (req, res) => {
+  // Check if the target date is valid
+  const targetDate = new Date(req.body.TargetDate);
+  if (isNaN(targetDate.getTime())) {
+    return res.status(400).json({ message: "Invalid target date" });
+  }
+
+  // Check if the target date is in the future
+  if (targetDate <= new Date()) {
+    return res.status(400).json({ message: "Target date must be in the future" });
+  }
+
   const newSaving = new Saving({
     TargetAmount: req.body.TargetAmount,
-    TargetDate: req.body.TargetDate,
+    TargetDate: targetDate,
     Description: req.body.Description,
     UserId: req.body.UserId,
-    created : Date.now()
+    created: Date.now()
   });
 
   newSaving.save()
