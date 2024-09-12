@@ -59,4 +59,4 @@ Or, to run it normally without nodemon:
 npm start
 ```
 
-The backend will now be running at `http://localhost:5000` and Swagger UI is running as `http://localhost:5000/api-docs/`
+The backend will now be running at `http://localhost:5000` and Swagger UI is running as `http://localhost:5000/api-docs/` and Postman Collection Link `https://www.postman.com/satellite-geoscientist-91060201/workspace/personal-finance-public/collection/26503391-053483b7-bbae-45e8-9980-772da3f8a26f?action=share&creator=26503391`
